@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "725942814518",
+    "project_id": "dpaesan2023-52d62",
+    "storage_bucket": "dpaesan2023-52d62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725942814518:android:8de6ca1cf2894e52371597",
+        "android_client_info": {
+          "package_name": "com.example.semana09dpafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiNCxoZNiHveamRUKTxPy_4nxFAGO4vh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

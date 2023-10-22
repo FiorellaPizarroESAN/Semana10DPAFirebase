@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Semana09DPAFirebase</string>
+    <string name="valbtnlogin">LOGIN</string>
+    <string name="valbtnregister">REGISTER</string>
+    <string name="valtxtEmail">Email</string>
+    <string name="valtxtPassword">Password\n</string>
+
+</resources>

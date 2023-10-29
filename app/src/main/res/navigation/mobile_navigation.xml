@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_cliente">
+    <fragment
+        android:id="@+id/nav_cliente"
+        android:name="com.example.semana09dpafirebase.ui.fragments.ClienteFragment"
+        android:label="fragment_cliente"
+        tools:layout="@layout/fragment_cliente" />
+    <fragment
+        android:id="@+id/nav_listado"
+        android:name="com.example.semana09dpafirebase.ui.fragments.ListadoFragment"
+        android:label="fragment_listado"
+        tools:layout="@layout/fragment_listado" />
+    <fragment
+        android:id="@+id/nav_pokemon"
+        android:name="com.example.semana09dpafirebase.ui.fragments.PokemonFragment"
+        android:label="fragment_pokemon"
+        tools:layout="@layout/fragment_pokemon" />
+</navigation>

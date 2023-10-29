@@ -26,31 +26,43 @@ class LoginActivity : AppCompatActivity() {
             val correo = txtEmail.text.toString()
             val clave = txtPassword.text.toString()
 
-            auth.signInWithEmailAndPassword(correo,clave)
+            auth.signInWithEmailAndPassword(correo, clave)
 
                 .addOnCompleteListener(this) { task ->
 
-                    if(task.isSuccessful){
+                    if (task.isSuccessful) {
 
 
                         Snackbar
-                            .make(findViewById(android.R.id.content),
+                            .make(
+                                findViewById(android.R.id.content),
                                 "Ingreso exitoso...",
-                                Snackbar.LENGTH_LONG).show()
+                                Snackbar.LENGTH_LONG
+                            ).show()
 
                         //Con la siguiente linea se le dice que en caso de login exitoso
                         // se debe iniciar el "Mainactivity"
-                        startActivity(Intent(this, MainActivity::class.java))
+                        startActivity(Intent(this, PrincipalActivity::class.java))
 
 
-                    }else
+                    } else {
                         Snackbar
-                            .make(findViewById(android.R.id.content),
+                            .make(
+                                findViewById(android.R.id.content),
                                 "Credenciales inválidas",
-                                Snackbar.LENGTH_LONG).show()
+                                Snackbar.LENGTH_LONG
+                            ).show()
 
+                    }
                 }
+
         }
 
+        btnRegister.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
+
+
+        }
     }
+
 }
